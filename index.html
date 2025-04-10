@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Explore The World - Trip Booking</title>
+</head>
+<body>
+
+  <!-- Roman Numeral List -->
+  <h1>Top Destinations</h1>
+  <ol type="I">
+    <li>France</li>
+    <li>Japan</li>
+    <li>Kenya</li>
+    <li>Brazil</li>
+  </ol>
+
+  <!-- Travel Images from Pexels -->
+  <h2>Travel Gallery</h2>
+  <img src="pexels-pixabay-60027.jpg" alt="Eiffel Tower" width="400">
+  <img src="pexels-athena-6580703 (1).jpg" alt="Mount Fuji" width="400">
+  <img src="pexels-brian-banford-2586617-12382023.jpg" alt="Kenya Safari" width="400">
+
+  <!-- Contact Table -->
+  <h2>Contact Our Agents</h2>
+  <table border="1" cellpadding="10">
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Mobile</th>
+      <th>Email</th>
+    </tr>
+    <tr><td> Knight Tours</td><td>Nairobi</td><td>+254700123456</td><td>knight@tours.com</td></tr>
+    <tr><td>Lando Travel</td><td>Paris</td><td>+33700000001</td><td>lando@travel.fr</td></tr>
+    <tr><td>Kimi Adventures</td><td>Tokyo</td><td>+819012345678</td><td>kimi@adventures.jp</td></tr>
+    <tr><td>Carlos Explorer</td><td>Rio</td><td>+552199123456</td><td>carlos@explorer.br</td></tr>
+    <tr><td>Piastri Safari</td><td>Nakuru</td><td>+254701234567</td><td>piastri@safari.co.ke</td></tr>
+  </table>
+
+  <!-- Registration Form -->
+  <h2>Book Your Trip</h2>
+  <form>
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required placeholder="Joe Doe"><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required placeholder="joe@example.com"><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required minlength="6"><br><br>
+
+    <label for="date">Travel Date:</label>
+    <input type="date" id="date" name="date" required><br><br>
+
+    <label for="destination">Destination:</label>
+    <select id="destination" name="destination" required>
+      <option value="">--Choose a destination--</option>
+      <option value="france">France</option>
+      <option value="japan">Japan</option>
+      <option value="kenya">Kenya</option>
+      <option value="brazil">Brazil</option>
+    </select><br><br>
+
+    <!-- Radio buttons for travel class -->
+    <label>Class:</label><br>
+    <input type="radio" id="economy" name="class" value="economy" required>
+    <label for="economy">Economy</label><br>
+    <input type="radio" id="business" name="class" value="business">
+    <label for="business">Business</label><br><br>
+
+    <!-- Checkboxes for services -->
+    <label>Additional Services:</label><br>
+    <input type="checkbox" id="meals" name="services" value="meals">
+    <label for="meals">Meals</label><br>
+    <input type="checkbox" id="guide" name="services" value="guide">
+    <label for="guide">Tour Guide</label><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- Video of a lion in the safari -->
+  <h2>Experience a Virtual Safari</h2>
+  <video width="640" height="360" controls>
+    <source src="https://www.pexels.com/video/lion-standing-on-the-field-5446310/" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  
+
+</body>
+</html>
